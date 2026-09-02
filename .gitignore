@@ -1,0 +1,9 @@
+# OS が作るファイル
+.DS_Store
+
+# エディタ
+.vscode/
+.idea/
+
+# 依存物（今は使わないが将来のため）
+node_modules/

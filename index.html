@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数学関数集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>数学関数集</h1>
+    <p>大学数学でよく出てくる関数を、説明とグラフで確認できます。</p>
+  </header>
+
+  <main>
+    <!-- 関数カード: シグモイド関数 -->
+    <section class="card">
+      <h2>シグモイド関数</h2>
+
+      <p class="formula">σ(x) = 1 / (1 + e<sup>-a·x</sup>)</p>
+
+      <p class="description">
+        入力を 0〜1 の範囲になめらかに押し込む関数。
+        機械学習では、値を「確率っぽいもの」に変換するのに使われる。
+        パラメータ <strong>a</strong> を大きくすると立ち上がりが急になり、
+        小さくするとゆるやかになる。
+      </p>
+
+      <!-- パラメータ調整スライダー -->
+      <div class="controls">
+        <label>
+          a = <span id="sigmoid-a-value">2.0</span>
+          <input type="range" id="sigmoid-a" min="0.1" max="8" step="0.1" value="2">
+        </label>
+      </div>
+
+      <!-- グラフの描画先 -->
+      <canvas id="sigmoid-canvas" width="480" height="360"></canvas>
+    </section>
+
+    <!--
+      ここに関数カードを増やしていく。
+      レッスンで tanh、ReLU、正規分布などを追加する予定。
+    -->
+  </main>
+
+  <footer>
+    <p>夏休みの学習プロジェクト</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

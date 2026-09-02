@@ -1,0 +1,61 @@
+/* 全体のレイアウト */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #222;
+  background: #fafafa;
+}
+
+header h1 {
+  margin-bottom: 4px;
+}
+
+/* 関数カード */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.formula {
+  font-size: 1.2rem;
+  background: #f0f4f8;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.description {
+  color: #444;
+}
+
+.controls {
+  margin: 16px 0;
+}
+
+.controls label {
+  display: block;
+  font-weight: bold;
+}
+
+.controls input[type="range"] {
+  width: 100%;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  background: #fff;
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+  text-align: center;
+}
