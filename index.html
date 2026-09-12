@@ -38,9 +38,31 @@
       <canvas id="sigmoid-canvas" width="480" height="360"></canvas>
     </section>
 
+    <!-- 関数カード: tanh（双曲線正接） -->
+    <section class="card">
+      <h2>tanh（双曲線正接）</h2>
+
+      <p class="formula">tanh(a·x) = (e<sup>a·x</sup> − e<sup>-a·x</sup>) / (e<sup>a·x</sup> + e<sup>-a·x</sup>)</p>
+
+      <p class="description">
+        入力を -1〜1 の範囲になめらかに押し込む関数。
+        シグモイドと形は似ているが、0を中心に上下対称なのが特徴。
+        パラメータ <strong>a</strong> を大きくすると立ち上がりが急になる。
+      </p>
+
+      <div class="controls">
+        <label>
+          a = <span id="tanh-a-value">1.0</span>
+          <input type="range" id="tanh-a" min="0.1" max="8" step="0.1" value="1">
+        </label>
+      </div>
+
+      <canvas id="tanh-canvas" width="480" height="360"></canvas>
+    </section>
+
     <!--
       ここに関数カードを増やしていく。
-      レッスンで tanh、ReLU、正規分布などを追加する予定。
+      レッスンで ReLU、正規分布などを追加する予定。
     -->
   </main>
 

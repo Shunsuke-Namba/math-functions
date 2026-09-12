@@ -71,6 +71,27 @@ sigmoidSlider.addEventListener("input", renderSigmoid);
 renderSigmoid();
 
 // =============================================================
+// tanh（双曲線正接）
+// =============================================================
+function tanhFn(x, a) {
+  return Math.tanh(a * x);
+}
+
+const tanhSlider = document.getElementById("tanh-a");
+const tanhValueLabel = document.getElementById("tanh-a-value");
+const tanhCanvas = document.getElementById("tanh-canvas");
+
+function renderTanh() {
+  const a = parseFloat(tanhSlider.value);
+  tanhValueLabel.textContent = a.toFixed(1);
+  // x: -10〜10, y: -1〜1 の範囲で描画
+  drawGraph(tanhCanvas, (x) => tanhFn(x, a), -10, 10, -1.1, 1.1);
+}
+
+tanhSlider.addEventListener("input", renderTanh);
+renderTanh();
+
+// =============================================================
 // ここに関数を追加していく:
 //   1. index.html に <section class="card"> を追加
 //   2. ここに f(x) の関数と render〇〇() を書く
