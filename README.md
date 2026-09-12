@@ -33,3 +33,4 @@ python3 -m http.server 8000
 
 - ブランチを切って機能を作り、`main` にマージする
 - `main` は常に動く状態を保つ
+## 開発者　Shunsuke-Namba
