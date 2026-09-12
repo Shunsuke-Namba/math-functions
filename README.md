@@ -31,6 +31,7 @@ python3 -m http.server 8000
 
 ## 開発メモ
 
-- ブランチを切って機能を作り、`main` にマージする
+- ブランチを切って機能を作り、Pull Request 経由で `main` にマージする
 - `main` は常に動く状態を保つ
+
 ## 開発者　Shunsuke-Namba
